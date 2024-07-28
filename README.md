@@ -32,11 +32,11 @@ N/A
 
 - <strong>AI Note Taker</strong>
 
-- [Website-Link](https://active-peak2.onrender.com/)
+- [Website-Link]()
 
 - <strong>AI Note Taker Screenshots</strong>
 
-- ![Screenshot](./public/images/active-peak-wireframe&app-flowchart.jpg)
+- ![Screenshot]()
 
 ## Support
 
