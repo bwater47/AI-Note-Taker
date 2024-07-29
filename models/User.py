@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship, validates
 from werkzeug.security import generate_password_hash, check_password_hash
-from config.connection import Base, engine
+from app import db  # Import db from app.py
 
-class User(Base):
+class User(db.Model):
     __tablename__ = 'user'
     
     id = Column(Integer, primary_key=True, autoincrement=True)
