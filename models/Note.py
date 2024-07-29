@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
-from config.connection import Base
+from app import db  # Import db from app.py
 
-class Note(Base):
+class Note(db.Model):
     __tablename__ = 'note'
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String, nullable=False)
@@ -13,3 +13,4 @@ class Note(Base):
     
     def __repr__(self):
         return f'<Note {self.title}>'
+
