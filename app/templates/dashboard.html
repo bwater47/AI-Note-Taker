@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard-container">
+    <h2>Welcome, {{ current_user.username }}!</h2>
+    <div class="notes-container">
+        <h3>Your Notes</h3>
+        {% if notes %}
+        <ul class="notes-list">
+            {% for note in notes %}
+            <li id="note-{{ note.id }}" class="note-item">
+                <h4>{{ note.title }}</h4>
+                <p>{{ note.content[:100] }}{% if note.content|length > 100 %}...{% endif %}</p>
+                <div class="note-actions">
+                    <a href="{{ url_for('note.edit_note', id=note.id) }}" class="btn btn-secondary">Edit</a>
+                    <button class="btn btn-danger delete-note" data-note-id="{{ note.id }}">Delete</button>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>You don't have any notes yet. Create one below!</p>
+        {% endif %}
+    </div>
+    <div class="new-note-container">
+        <h3>Create New Note</h3>
+        <form id="new-note-form">
+            <div class="form-group">
+                <label for="new-note-title">Title:</label>
+                <input type="text" id="new-note-title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="new-note-content">Content:</label>
+                <textarea id="new-note-content" name="content" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Note</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

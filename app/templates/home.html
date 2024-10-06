@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome to AI Note Taker{% endblock %}
+
+{% block content %}
+<div class="home-container">
+  <h1>Welcome to AI Note Taker</h1>
+  <p>Organize your thoughts and let AI help you summarize them.</p>
+  {% if not current_user.is_authenticated %}
+  <div class="cta-buttons">
+    <a href="{{ url_for('auth.login') }}" class="btn btn-primary">Login</a>
+    <a href="{{ url_for('auth.signup') }}" class="btn btn-secondary">Sign Up</a>
+  </div>
+  {% else %}
+  <a href="{{ url_for('dashboard.index') }}" class="btn btn-primary">Go to Dashboard</a>
+  {% endif %}
+</div>
+{% endblock %}

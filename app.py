@@ -1,16 +1,7 @@
-from flask import Flask, request
+from app import create_app, db
+from config import Config
 
-app = Flask(__name__)
-
-@app.before_request
-def setup_before_request():
-    if request.endpoint == 'home':
-        print("Running setup before the first request.")
-
-@app.route('/')
-def home():
-    return "Hello, World!"
+app = create_app(Config)
 
 if __name__ == '__main__':
     app.run(debug=True)
-

@@ -1,10 +1,12 @@
 # AI-Note-Taker
-- Using LangChain and the OpenAI API making this a summary generator for notes that the user takes.
-![Static Badge](https://img.shields.io/badge/JavaScript-(25%25)-yellow)
-![Static Badge](https://img.shields.io/badge/Handlebars-(25%25)-red)
-![Static Badge](https://img.shields.io/badge/CSS-(10%25)-blue)
-![Static Badge](https://img.shields.io/badge/SQL-(10%25)-lightblue)
-![Static Badge](https://img.shields.io/badge/JSON-(5%25)-purple)
+
+  ![Static Badge](<https://img.shields.io/badge/JavaScript-(25%25)-yellow>)
+  ![Static Badge](<https://img.shields.io/badge/Handlebars-(25%25)-red>)
+  ![Static Badge](<https://img.shields.io/badge/CSS-(10%25)-blue>)
+  ![Static Badge](<https://img.shields.io/badge/SQL-(10%25)-lightblue>)
+  ![Static Badge](<https://img.shields.io/badge/JSON-(5%25)-purple>)
+
+- Using Python, JavaScript, and the OpenAI API making this a summary generator for notes that the user takes.
 
 ## Description
 
@@ -28,7 +30,11 @@ You'll need to install GitBash, VS Code, Node.js, NPM bcrypt, NPM connect-sessio
 
 ## Usage
 
-N/A
+With AI Note Taker the user gets to:
+
+- Login/Signup
+- Store notes on the apps database.
+- Generate summaries of the saved notes.
 
 - <strong>AI Note Taker</strong>
 
@@ -45,11 +51,13 @@ N/A
 ## Credits
 
 People who worked on this project were Brennan Waterbury. You can contact the contributor(s) through the GitHub profile(s) link(s) listed here.
+
 - <a href="https://github.com/bwater47" alt="GitHub Link">GitHub Profile - Brennan Waterbury</a>
 
 ## License
+
 ![Static Badge](https://img.shields.io/badge/GPL-3.0-orange)
- 
+
 - This is an [https://choosealicense.com/licenses/gpl-3.0/#](https://choosealicense.com/licenses/gpl-3.0/#) license.
 
 ## Features
@@ -58,34 +66,19 @@ People who worked on this project were Brennan Waterbury. You can contact the co
 
 ## Contributing
 
-Contributing is allowed if you're in the U of U Coding Bootcamp. Contact us on the slack channel for information. 
+Contributing is allowed. Contact me on via email/linkedin.
+
 - [Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Authors and Acknowledgment
 
-Handlebars. (06/29/24). https://handlebarsjs.com/ 
+Course. edX. (10/28/24). https://www.edx.org/
 
-Sequelize V6. Sequelize. (06/29/24). https://sequelize.org/docs/v6/ 
+Bootcamp Spot. (10/28/24). https://bootcampspot.com/
 
-Documentation. PostgreSQL. (06/29/24). https://www.postgresql.org/docs/ 
+W3Schools Online Web Tutorials. (10/28/24). https://www.w3schools.com/
 
-The Collaborative API Development Platform. Insomnia. (06/29/24). https://insomnia.rest/ 
-
-Routing. Express routing. (06/29/24). https://expressjs.com/en/guide/routing.html#express-router 
-
-NPM docs. npm Docs. (06/29/24). https://docs.npmjs.com/ 
-
-CLI commands. npm Docs. (06/29/24). https://docs.npmjs.com/cli/v10/commands
-
-Node.js V22.0.0 documentation. Command-line API | Node.js v22.0.0 Documentation. (06/29/24). https://nodejs.org/api/cli.html
-
-MozDevNet. (06/29/24). Resources for developers, by developers. MDN Web Docs. https://developer.mozilla.org/en-US/ 
-
-Bootcamp Spot. (06/29/24). https://bootcampspot.com/
-
-W3Schools Online Web Tutorials. (06/29/24). https://www.w3schools.com/
-
-Chatgpt. ChatGPT. (06/29/24). https://openai.com/chatgpt
+Chatgpt. ChatGPT. (10/28/24). https://openai.com/chatgpt
 
 • Please note: While ChatGPT was utilized to generate dialog content for the README file, it was not involved in the generation of any code, HTML edits, CSS edits, or other assets within the repository apart from this README specifically.
 
